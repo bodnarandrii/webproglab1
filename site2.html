@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <!-- Обов'язковий тег з автором -->
+    <meta name="Author" content="Андрій Боднар">
+    <title>Про фірму - Продаж комп'ютерів</title>
+</head>
+<body>
+
+    <header>
+        <h1 align="center">Віртуальна комп'ютерна фірма "Chernivtsi PC"</h1>
+    </header>
+
+    <section>
+        <h2>Про нас</h2>
+        <!-- Тег blockquote з атрибутами class, lang, dir -->
+        <blockquote class="company-mission" lang="uk" dir="ltr">
+            Наша місія — забезпечити кожного клієнта надійною та швидкою технікою для навчання, роботи та розваг. 
+            Як писав журнал <cite id="cite1" title="Джерело">Комп'ютерний світ</cite> (тег cite з id та title), ми є лідерами у своєму регіоні.
+        </blockquote>
+
+        <p>
+            Ми пропонуємо найкращі 
+            <!-- Тег abbr з атрибутами dir, style -->
+            <abbr dir="ltr" style="color: blue;" title="Персональні комп'ютери">ПК</abbr> 
+            на ринку. Кожен 
+            <!-- Тег dfn з атрибутами dir, style -->
+            <dfn dir="ltr" style="font-weight: bold; color: darkred;">системний блок</dfn> 
+            проходить ретельне тестування.
+        </p>
+
+        <!-- Тег img з атрибутами src, alt, width, height -->
+        <!-- Зверни увагу: тобі потрібно буде додати реальне фото pc.jpg у папку з проєктом, щоб воно відображалося -->
+        <img src="pc.jpg" alt="Зображення комп'ютера" width="400" height="250">
+
+        <hr>
+
+        <h2>Наш прайс-лист (Прайс комп'ютерів)</h2>
+        <!-- Таблиця з обов'язковими полями для 1 варіанта -->
+        <table border="1" cellpadding="5" cellspacing="0" width="100%">
+            <tr style="background-color: #f2f2f2;">
+                <th>Назва комп'ютера</th>
+                <th>Тип процесора</th>
+                <th>Тактова частота</th>
+                <th>Обсяг оперативної пам'яті</th>
+                <th>Обсяг вінчестера</th>
+                <th>Відеокарта</th>
+                <th>Звукова карта</th>
+            </tr>
+            <tr>
+                <td>Chernivtsi Gaming Pro</td>
+                <td>Intel Core i7</td>
+                <td>3.8 ГГц</td>
+                <td>32 ГБ</td>
+                <td>1 ТБ SSD</td>
+                <td>NVIDIA RTX 4060</td>
+                <td>Realtek ALC897</td>
+            </tr>
+            <tr>
+                <td>Student Office Lite</td>
+                <td>AMD Ryzen 5</td>
+                <td>3.6 ГГц</td>
+                <td>16 ГБ</td>
+                <td>512 ГБ SSD</td>
+                <td>Вбудована Radeon Graphics</td>
+                <td>Realtek ALC887</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>Технічна інформація</h2>
+        <p>Приклад внутрішнього коду налаштування сервера (для демонстрації тегів):</p>
+        
+        <!-- Тег pre з атрибутами id, title -->
+        <pre id="code-example" title="Конфігурація">
+Server config {
+    Host: localhost;
+    Port: 8080;
+}
+        </pre>
+        
+        <p>
+            Для запуску використовуйте команду: 
+            <!-- Тег code з атрибутами lang, class -->
+            <code lang="en" class="command-line">npm start</code>
+        </p>
+    </section>
+
+    <footer>
+        <hr>
+        <h3>Контакти</h3>
+        <!-- Тег address з атрибутами style, dir -->
+        <address style="font-style: italic;" dir="ltr">
+            м. Чернівці, вул. Університетська, 28<br>
+            Email: info@chernivtsi-pc.cv.ua
+        </address>
+    </footer>
+
+</body>
+</html>
