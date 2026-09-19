@@ -2,71 +2,75 @@
 <html lang="uk">
 <head>
     <meta charset="utf-8">
-    <!-- Обов'язковий тег з автором -->
     <meta name="Author" content="Андрій Боднар">
     <title>Новини фірми - Chernivtsi PC</title>
-    
-    <!-- Тег style з атрибутом type -->
     <style type="text/css">
         .news-text { font-family: Arial, sans-serif; }
     </style>
 </head>
-<body>
+<body style="background-image: url('back.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;" text="#f1f5f9">
 
-    <!-- Тег header з атрибутами style, class -->
-    <header style="background-color: #e0f7fa; padding: 15px;" class="main-header">
-        <h1>Новини комп'ютерної компанії 
-            <!-- Тег bdo з атрибутом dir -->
+    <header style="background-color: #0F172A; width: 80%; margin: 0 auto; padding: 20px;" class="main-header">
+        <h1 align="center">Новини комп'ютерної компанії 
             <bdo dir="ltr">"Chernivtsi PC"</bdo>
         </h1>
     </header>
 
-    <!-- Тег section з атрибутами style, title -->
-    <section style="margin: 20px;" title="Останні події">
+    <section style="width: 80%; margin: 0 auto; background-color: #1E293B; padding: 20px;" title="Останні події">
         
-        <!-- Тег div з атрибутами id, style -->
-        <div id="news-1" style="border: 1px solid #ccc; padding: 10px;">
+        <div id="news-1" style="border: 1px solid #334155; padding: 15px; margin-bottom: 20px; background-color: #0f172a;">
+            <time style="color: #94a3b8;" cite="https://news.example.com" class="date-stamp">12 вересня 2026</time>
             
-            <!-- Тег time з атрибутами style, cite, class -->
-            <time style="color: gray;" cite="https://news.example.com" class="date-stamp">12 вересня 2026</time>
-            
-            <h2>
-                <!-- Тег span з атрибутами class, title -->
+            <h2 style="color: #38bdf8;">
                 <span class="highlight" title="Головна новина">Супер пропозиція!</span> 
-                <!-- Тег ins з атрибутами lang, id -->
-                <ins lang="uk" id="insert-1">Надходження нових відеокарт</ins>
+                <ins lang="uk" id="insert-1" style="color: #f1f5f9; text-decoration: none;">Надходження нових відеокарт</ins>
             </h2>
 
             <p>
                 Ми отримали нову партію графічних прискорювачів серії RTX Ultra
-                <!-- Тег sup з атрибутом lang -->
                 <sup lang="en">TM</sup>. 
                 Тепер ігри працюватимуть ще швидше завдяки архітектурі версії 
-                <!-- Тег sub з атрибутами id, style, title -->
-                <sub id="version" style="color: blue;" title="Версія">2.0</sub>.
+                <sub id="version" style="color: #38bdf8;" title="Версія">2.0</sub>.
             </p>
 
             <p>
                 Наша нова супер<wbr style="display:none;" class="word-break">потужна збірка містить найкращі компоненти.
-                <!-- Тег ruby та rt (rt з атрибутами style, id) -->
-                Купуйте <ruby>ПК<rt style="color: red; font-size: 10px;" id="annotation-1">Персональний комп'ютер</rt></ruby> вже сьогодні.
+                Купуйте <ruby>ПК<rt style="color: #38bdf8; font-size: 10px;" id="annotation-1">Персональний комп'ютер</rt></ruby> вже сьогодні.
             </p>
 
-            <!-- Тег img з атрибутами id, width, hspace (також додано src, alt і usemap для коректної роботи) -->
             <img src="sale.jpg" alt="Розпродаж" usemap="#salemap" id="promo-image" width="300" hspace="10">
 
-            <!-- Тег map з атрибутами onblur, coords, onfocus, class, tabindex -->
             <map name="salemap" onblur="return false;" coords="0,0,100,100" onfocus="return false;" class="image-map" tabindex="0">
-                <!-- Тег area з атрибутами tabindex, href, onblur, shape, name (також додано coords) -->
                 <area tabindex="1" href="site2.html" onblur="return false;" shape="rect" name="link-to-company" coords="0,0,300,300" alt="Перейти до прайсу">
             </map>
         </div>
 
+        <div id="news-2" style="border: 1px solid #334155; padding: 15px; margin-bottom: 20px; background-color: #0f172a;">
+            <time style="color: #94a3b8;" class="date-stamp">15 вересня 2026</time>
+            <h2 style="color: #38bdf8;">Безкоштовне технічне обслуговування для студентів</h2>
+            <p>
+                З нагоди початку навчального року ми запускаємо спеціальну акцію. Кожен студент міста Чернівці може принести свій системний блок або ноутбук на безкоштовну чистку від пилу та заміну термопасти. Акція діє до кінця місяця в нашому головному сервісному центрі.
+            </p>
+        </div>
+
+        <div id="news-3" style="border: 1px solid #334155; padding: 15px; background-color: #0f172a;">
+            <time style="color: #94a3b8;" class="date-stamp">18 вересня 2026</time>
+            <h2 style="color: #38bdf8;">Оновлення конфігурації Chernivtsi Gaming Pro</h2>
+            <p>
+                Наша флагманська ігрова модель отримала вдосконалену систему рідинного охолодження та швидші модулі оперативної пам'яті DDR5. Ознайомитися з оновленими характеристиками та замовити збірку вже можна в нашому прайс-листі.
+            </p>
+        </div>
+
     </section>
 
-    <!-- Тег footer з атрибутами class, id -->
-    <footer class="site-footer" id="main-footer">
-        <p align="center">© 2026 Всі права захищено. Chernivtsi PC.</p>
+    <footer class="site-footer" id="main-footer" align="center" style="background-color: #0b1120; padding: 20px; color: #f1f5f9; width: 80%; margin: 0 auto;">
+        <hr style="border-color: #334155;">
+        <p style="margin-bottom: 10px;">
+            <a href="site1.html" style="color: #38bdf8; text-decoration: none; margin: 0 10px;">Про автора сайту</a> | 
+            <a href="site2.html" style="color: #38bdf8; text-decoration: none; margin: 0 10px;">Про компанію (Прайс)</a> | 
+            <span style="color: #94a3b8; margin: 0 10px;">Новини компанії</span>
+        </p>
+        <p style="font-size: 13px; color: #64748b;">© 2026 Всі права захищено. Chernivtsi PC.</p>
     </footer>
 
 </body>

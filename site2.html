@@ -2,48 +2,42 @@
 <html lang="uk">
 <head>
     <meta charset="utf-8">
-    <!-- Обов'язковий тег з автором -->
     <meta name="Author" content="Андрій Боднар">
     <title>Про фірму - Продаж комп'ютерів</title>
 </head>
-<body>
+<body  style="background-image: url('back.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;" text="#f1f5f9">
 
-    <header>
+    <header style="background-color: #0F172A; width: 80%; margin: 0 auto; padding: 20px;">
         <h1 align="center">Віртуальна комп'ютерна фірма "Chernivtsi PC"</h1>
     </header>
 
-    <section>
+    <section style="width: 80%; margin: 0 auto;  background-color: #1E293B; padding: 20px;" >
+        
         <h2>Про нас</h2>
-        <!-- Тег blockquote з атрибутами class, lang, dir -->
         <blockquote class="company-mission" lang="uk" dir="ltr">
             Наша місія — забезпечити кожного клієнта надійною та швидкою технікою для навчання, роботи та розваг. 
-            Як писав журнал <cite id="cite1" title="Джерело">Комп'ютерний світ</cite> (тег cite з id та title), ми є лідерами у своєму регіоні.
+            Як писав журнал <cite id="cite1" title="Джерело">Комп'ютерний світ</cite> , ми є лідерами у своєму регіоні.
         </blockquote>
 
         <p>
             Ми пропонуємо найкращі 
-            <!-- Тег abbr з атрибутами dir, style -->
-            <abbr dir="ltr" style="color: blue;" title="Персональні комп'ютери">ПК</abbr> 
+            <abbr dir="ltr" style="color: #1d4ed8;" title="Персональні комп'ютери">ПК</abbr> 
             на ринку. Кожен 
-            <!-- Тег dfn з атрибутами dir, style -->
             <dfn dir="ltr" style="font-weight: bold; color: darkred;">системний блок</dfn> 
             проходить ретельне тестування.
         </p>
 
-        <!-- Тег img з атрибутами src, alt, width, height -->
-        <!-- Зверни увагу: тобі потрібно буде додати реальне фото pc.jpg у папку з проєктом, щоб воно відображалося -->
-        <img src="pc.jpg" alt="Зображення комп'ютера" width="400" height="250">
+        <img src="pc.jpg" alt="Зображення комп'ютера" width="400" height="400">
 
         <hr>
 
         <h2>Наш прайс-лист (Прайс комп'ютерів)</h2>
-        <!-- Таблиця з обов'язковими полями для 1 варіанта -->
         <table border="1" cellpadding="5" cellspacing="0" width="100%">
-            <tr style="background-color: #f2f2f2;">
+            <tr style="background-color: #1d4ed8;">
                 <th>Назва комп'ютера</th>
                 <th>Тип процесора</th>
                 <th>Тактова частота</th>
-                <th>Обсяг оперативної пам'яті</th>
+                <th>Обсяг ОЗУ</th>
                 <th>Обсяг вінчестера</th>
                 <th>Відеокарта</th>
                 <th>Звукова карта</th>
@@ -71,9 +65,8 @@
         <hr>
 
         <h2>Технічна інформація</h2>
-        <p>Приклад внутрішнього коду налаштування сервера (для демонстрації тегів):</p>
-        
-        <!-- Тег pre з атрибутами id, title -->
+        <p>На комп'ютері Student Office Lite предвстановлено програмне забезпечення для розгортання домашнього сервера
+            з наступними параметрами конфігурації:</p>
         <pre id="code-example" title="Конфігурація">
 Server config {
     Host: localhost;
@@ -83,20 +76,28 @@ Server config {
         
         <p>
             Для запуску використовуйте команду: 
-            <!-- Тег code з атрибутами lang, class -->
             <code lang="en" class="command-line">npm start</code>
         </p>
     </section>
 
-    <footer>
-        <hr>
-        <h3>Контакти</h3>
-        <!-- Тег address з атрибутами style, dir -->
-        <address style="font-style: italic;" dir="ltr">
-            м. Чернівці, вул. Університетська, 28<br>
-            Email: info@chernivtsi-pc.cv.ua
-        </address>
-    </footer>
+<footer style="background-color: #0b1120; padding: 20px; color: #f1f5f9; width: 80%; margin: 0 auto;" align="center">
+    <hr style="border-color: #334155;">
+    
+    <p style="margin-bottom: 15px;">
+        <a href="site1.html" style="color: #38bdf8; text-decoration: none; margin: 0 10px;">Про автора сайту</a> | 
+        <span style="color: #94a3b8; margin: 0 10px;">Про компанію</span> | 
+        <a href="site3.html" style="color: #38bdf8; text-decoration: none; margin: 0 10px;">Новини компанії</a>
+    </p>
 
+    <h3>Контакти</h3>
+    <address dir="ltr" style="font-style: normal;">
+        м. Чернівці, вул. Університетська, 28<br>
+        Email: <a href="mailto:info@chernivtsi-pc.cv.ua" style="color: #38bdf8; text-decoration: none;">info@chernivtsi-pc.cv.ua</a>
+    </address>
+    
+    <p style="font-size: 13px; color: #64748b; margin-top: 15px;">
+        &copy; 2026 Chernivtsi PC. Усі права захищено.
+    </p>
+</footer>
 </body>
 </html>
