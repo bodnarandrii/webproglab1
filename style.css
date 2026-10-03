@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/* =========================================================
+   1. БАЗОВІ СЕЛЕКТОРИ ТА СЕЛЕКТОРИ ТЕГІВ
+   ========================================================= */
+body {
+    direction: ltr; /* Напрямок виводу */
+    unicode-bidi: normal;
+    background-color: #0f172a;
+    color: #f1f5f9;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Селектор тегу */
+h1 {
+    color: #38bdf8;
+    line-height: normal;
+    margin-top: 10px;
+    margin-right: 5%;
+    border-top-color: #38bdf8;
+}
+
+/* =========================================================
+   2. РІВНІ ВКЛАДЕНОСТІ, СЕЛЕКТОРИ НАЩАДКІВ І ДІТЕЙ
+   ========================================================= */
+/* Контекстний селектор (спадкоємців / нащадків) */
+.page-wrapper .content-box {
+    background-color: #1e293b;
+    position: static;
+    z-index: auto;
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+/* Селектор дітей (дочірній >) */
+.content-box > section {
+    display: block;
+    position: relative;
+    min-height: 200px;
+    min-height: 30%;
+    height: auto;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-top: 15px;
+    margin-top: 2%;
+    margin-right: 15px;
+    margin-right: 3%;
+    border-color: #334155;
+    border-style: groove;
+    border-width: 2px;
+}
+
+/* =========================================================
+   3. СЕЛЕКТОРИ АТРИБУТІВ: [attr], [attr=value], [attr^=value]
+   ========================================================= */
+/* [attr] - будь-який елемент із заданим атрибутом */
+[title] {
+    border-bottom-width: thin;
+    border-bottom-style: dotted;
+    border-right-color: #64748b;
+}
+
+/* [attr=value] - точний збіг */
+abbr[title="Персональні комп'ютери"] {
+    vertical-align: baseline;
+    color: #60a5fa;
+    border-width: thin;
+    border-style: dotted;
+}
+
+/* [attr^=value] - атрибут починається з підрядка */
+a[href^="site"] {
+    color: #38bdf8 !important; /* Демонстрація !important */
+    display: inline;
+    text-decoration: none;
+    outline: 1px dotted #38bdf8;
+    outline-width: thin;
+}
+
+/* =========================================================
+   4. СЕЛЕКТОРИ ІДЕНТИФІКАТОРІВ (#id)
+   ========================================================= */
+#intro {
+    background-color: #0b1120;
+    margin: 15px;
+    margin: 2%;
+    border-left-width: thin;
+    border-left-width: 4px;
+    border-right-style: none;
+    border-bottom-style: none;
+    overflow: visible;
+}
+
+#code-example {
+    display: block;
+    unicode-bidi: bidi-override;
+    direction: ltr;
+    height: 120px;
+    height: 25%;
+    overflow: auto;
+    background-color: #020617;
+    border-width: thin;
+    border-style: hidden;
+}
+
+/* =========================================================
+   5. ПСЕВДОКЛАСИ ТА ПСЕВДОЕЛЕМЕНТИ
+   ========================================================= */
+/* ::first-line */
+p::first-line {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* ::before */
+blockquote::before {
+    content: "« ";
+    color: #38bdf8;
+    font-size: 20px;
+}
+
+/* :first-child */
+section > p:first-child {
+    border-top-color: #0284c7;
+    padding-top: 10px;
+}
+
+/* :last-child */
+.news-card:last-child {
+    margin-right: 0px;
+    border-bottom-style: groove;
+}
+
+/* :last-of-type */
+section p:last-of-type {
+    border-bottom-width: 3px;
+    border-bottom-style: dotted;
+}
+
+/* :lang */
+p:lang(uk) {
+    line-height: 22px;
+}
+
+/* :active */
+a:active {
+    color: #f43f5e !important;
+    vertical-align: sub;
+}
+
+/* :enabled та :disabled для елементів форм */
+input:enabled, select:enabled, button:enabled {
+    background-color: #334155;
+    color: #f8fafc;
+    border-style: groove;
+    border-width: 1px;
+}
+
+input:disabled, button:disabled {
+    background-color: #1e293b;
+    color: #64748b;
+    border-style: dotted;
+    border-color: #475569;
+}
+
+/* =========================================================
+   6. ПЛАВАЮЧІ ЕЛЕМЕНТИ (FLOAT), CLEAR ТА ВІЗУАЛІЗАЦІЯ
+   ========================================================= */
+.float-box {
+    float: left;
+    width: 280px;
+    margin-right: 20px;
+    margin-right: 4%;
+    padding-left: 10px;
+    background-image: url('pc.jpg');
+    background-attachment: scroll;
+    background-position: left;
+    background-position: 10px 10px;
+    background-position: 5% 5%;
+}
+
+.clear-box {
+    clear: left;
+    float: none;
+    clear: none;
+}
+
+/* clip, visibility та vertical-align */
+.clipped-badge {
+    position: absolute;
+    clip: rect(0px, 60px, 30px, 0px);
+    visibility: visible;
+    vertical-align: bottom;
+    vertical-align: 2px;
+}
+
+.hidden-row {
+    visibility: collapse;
+}
+
+/* =========================================================
+   7. ТАБЛИЧНІ ДИСПЛЕЇ (display: inline-table, table-cell тощо)
+   ========================================================= */
+.custom-table {
+    display: inline-table;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.custom-colgroup {
+    display: table-column-group;
+}
+
+.custom-cell {
+    display: table-cell;
+    padding-left: 8px;
+    padding-top: 6px;
+    padding-right: 8px;
+    border-right-style: dotted;
+    border-bottom-style: groove;
+}
+
+/* compact для специфікацій списків / блоків */
+.compact-item {
+    display: compact;
+}

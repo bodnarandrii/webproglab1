@@ -4,100 +4,114 @@
     <meta charset="utf-8">
     <meta name="Author" content="Андрій Боднар">
     <title>Про фірму - Продаж комп'ютерів</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-<body  style="background-image: url('back.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;" text="#f1f5f9">
+<body>
 
-    <header style="background-color: #0F172A; width: 80%; margin: 0 auto; padding: 20px;">
-        <h1 align="center">Віртуальна комп'ютерна фірма "Chernivtsi PC"</h1>
-    </header>
+    <div class="page-wrapper">
+        <div class="content-box">
 
-    <section style="width: 80%; margin: 0 auto;  background-color: #1E293B; padding: 20px;" >
-        
-        <h2>Про нас</h2>
-        <blockquote class="company-mission" lang="uk" dir="ltr">
-            Наша місія — забезпечити кожного клієнта надійною та швидкою технікою для навчання, роботи та розваг. 
-            Як писав журнал <cite id="cite1" title="Джерело">Комп'ютерний світ</cite> , ми є лідерами у своєму регіоні.
-        </blockquote>
+            <header style="padding: 20px;">
+                <h1 align="center">Віртуальна комп'ютерна фірма "Chernivtsi PC"</h1>
+            </header>
 
-        <p>
-            Ми пропонуємо найкращі 
-            <abbr dir="ltr" style="color: #1d4ed8;" title="Персональні комп'ютери">ПК</abbr> 
-            на ринку. Кожен 
-            <dfn dir="ltr" style="font-weight: bold; color: darkred;">системний блок</dfn> 
-            проходить ретельне тестування.
-        </p>
+            <section>
+                <h2>Про нас</h2>
+                <blockquote class="company-mission" lang="uk" dir="ltr">
+                    Наша місія — забезпечити кожного клієнта надійною та швидкою технікою для навчання, роботи та розваг. 
+                    Як писав журнал <cite id="cite1" title="Джерело">Комп'ютерний світ</cite>, ми є лідерами у своєму регіоні.
+                </blockquote>
 
-        <img src="pc.jpg" alt="Зображення комп'ютера" width="400" height="400">
+                <div class="float-box">
+                    <img src="pc.jpg" alt="Зображення комп'ютера" width="260" height="260" style="display: block; margin: 0 auto;">
+                </div>
 
-        <hr>
+                <p>
+                    Ми пропонуємо найкращі 
+                    <abbr dir="ltr" title="Персональні комп'ютери">ПК</abbr> 
+                    на ринку. Кожен 
+                    <dfn dir="ltr" style="font-weight: bold; color: #f43f5e;">системний блок</dfn> 
+                    проходить ретельне тестування інженерами.
+                </p>
 
-        <h2>Наш прайс-лист (Прайс комп'ютерів)</h2>
-        <table border="1" cellpadding="5" cellspacing="0" width="100%">
-            <tr style="background-color: #1d4ed8;">
-                <th>Назва комп'ютера</th>
-                <th>Тип процесора</th>
-                <th>Тактова частота</th>
-                <th>Обсяг ОЗУ</th>
-                <th>Обсяг вінчестера</th>
-                <th>Відеокарта</th>
-                <th>Звукова карта</th>
-            </tr>
-            <tr>
-                <td>Chernivtsi Gaming Pro</td>
-                <td>Intel Core i7</td>
-                <td>3.8 ГГц</td>
-                <td>32 ГБ</td>
-                <td>1 ТБ SSD</td>
-                <td>NVIDIA RTX 4060</td>
-                <td>Realtek ALC897</td>
-            </tr>
-            <tr>
-                <td>Student Office Lite</td>
-                <td>AMD Ryzen 5</td>
-                <td>3.6 ГГц</td>
-                <td>16 ГБ</td>
-                <td>512 ГБ SSD</td>
-                <td>Вбудована Radeon Graphics</td>
-                <td>Realtek ALC887</td>
-            </tr>
-        </table>
+                <div class="clear-box"></div>
 
-        <hr>
+                <hr>
 
-        <h2>Технічна інформація</h2>
-        <p>На комп'ютері Student Office Lite предвстановлено програмне забезпечення для розгортання домашнього сервера
-            з наступними параметрами конфігурації:</p>
-        <pre id="code-example" title="Конфігурація">
+                <h2>Наш прайс-лист (Прайс комп'ютерів)</h2>
+                <!-- Використання табличних дисплеїв: inline-table, table-column-group, table-cell -->
+                <div class="custom-table" role="table">
+                    <div class="custom-colgroup"></div>
+                    <table border="1" cellpadding="5" cellspacing="0" width="100%">
+                        <tr style="background-color: #1d4ed8;">
+                            <th class="custom-cell">Назва комп'ютера</th>
+                            <th class="custom-cell">Процесор</th>
+                            <th class="custom-cell">Частота</th>
+                            <th class="custom-cell">ОЗУ</th>
+                            <th class="custom-cell">SSD</th>
+                            <th class="custom-cell">Відеокарта</th>
+                            <th class="custom-cell">Звукова карта</th>
+                        </tr>
+                        <tr>
+                            <td class="custom-cell">Chernivtsi Gaming Pro</td>
+                            <td class="custom-cell">Intel Core i7</td>
+                            <td class="custom-cell">3.8 ГГц</td>
+                            <td class="custom-cell">32 ГБ</td>
+                            <td class="custom-cell">1 ТБ SSD</td>
+                            <td class="custom-cell">RTX 4060</td>
+                            <td class="custom-cell">ALC897</td>
+                        </tr>
+                        <tr>
+                            <td class="custom-cell">Student Office Lite</td>
+                            <td class="custom-cell">AMD Ryzen 5</td>
+                            <td class="custom-cell">3.6 ГГц</td>
+                            <td class="custom-cell">16 ГБ</td>
+                            <td class="custom-cell">512 ГБ SSD</td>
+                            <td class="custom-cell">Radeon Graphics</td>
+                            <td class="custom-cell">ALC887</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <hr>
+
+                <h2>Технічна інформація</h2>
+                <p>На комп'ютері Student Office Lite предвстановлено програмне забезпечення з наступними параметрами:</p>
+                <pre id="code-example" title="Конфігурація">
 Server config {
     Host: localhost;
     Port: 8080;
+    Status: Active;
 }
-        </pre>
-        
-        <p>
-            Для запуску використовуйте команду: 
-            <code lang="en" class="command-line">npm start</code>
-        </p>
-    </section>
+                </pre>
+                
+                <p>
+                    Для запуску використовуйте команду: 
+                    <code lang="en" class="command-line">npm start</code>
+                </p>
+            </section>
 
-<footer style="background-color: #0b1120; padding: 20px; color: #f1f5f9; width: 80%; margin: 0 auto;" align="center">
-    <hr style="border-color: #334155;">
-    
-    <p style="margin-bottom: 15px;">
-        <a href="site1.html" style="color: #38bdf8; text-decoration: none; margin: 0 10px;">Про автора сайту</a> | 
-        <span style="color: #94a3b8; margin: 0 10px;">Про компанію</span> | 
-        <a href="site3.html" style="color: #38bdf8; text-decoration: none; margin: 0 10px;">Новини компанії</a>
-    </p>
+            <footer style="padding: 20px; text-align: center;">
+                <hr style="border-color: #334155;">
+                <p>
+                    <a href="site1.html">Про автора сайту</a> | 
+                    <span style="color: #94a3b8; margin: 0 10px;">Про компанію</span> | 
+                    <a href="site3.html">Новини компанії</a>
+                </p>
 
-    <h3>Контакти</h3>
-    <address dir="ltr" style="font-style: normal;">
-        м. Чернівці, вул. Університетська, 28<br>
-        Email: <a href="mailto:info@chernivtsi-pc.cv.ua" style="color: #38bdf8; text-decoration: none;">info@chernivtsi-pc.cv.ua</a>
-    </address>
-    
-    <p style="font-size: 13px; color: #64748b; margin-top: 15px;">
-        &copy; 2026 Chernivtsi PC. Усі права захищено.
-    </p>
-</footer>
+                <h3>Контакти</h3>
+                <address dir="ltr" style="font-style: normal;">
+                    м. Чернівці, вул. Університетська, 28<br>
+                    Email: <a href="mailto:info@chernivtsi-pc.cv.ua">info@chernivtsi-pc.cv.ua</a>
+                </address>
+                
+                <p style="font-size: 13px; color: #64748b; margin-top: 15px;">
+                    &copy; 2026 Chernivtsi PC. Усі права захищено.
+                </p>
+            </footer>
+
+        </div>
+    </div>
+
 </body>
 </html>

@@ -4,50 +4,58 @@
     <meta charset="utf-8">
     <meta name="Author" content="Андрій Олександрович Боднар">
     <title>Про автора</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-<body style="background-color: gray;">
-    
-    <header>
-        <h3 style="color: darkblue;" dir="ltr" align="center">Вітаю на сайті мого вебпроєкту!</h3>
-    </header>
-                                                                            
-    <section>
-        <h4 title="Біографія" align="center" id="about">Коротка інформація про мене</h4>
-        
-        <p id="intro" title="Про розробника" lang="uk">
-            Мене звати Андрій Боднар. Я студент Чернівецького національного університету. 
-        </p>
-        
+<body>
 
-        
-        <h5 style="color: #333;" dir="ltr" align="left">Мої навички та інтереси:</h5>
-        
-        <p id="hobbies" title="Хобі" lang="uk">
-            Я активно вивчаю вебтехнології, зокрема структурування документів за допомогою HTML. 
-            Нижче продемонстровано використання тегів: 
-            <br id="br1" title="Розділювач рядків"">
-            <big id="big-text" title="Великий шрифт" lang="uk">цей текст великий</big>, 
-            <br id="br2" title="Розділювач рядків"">
-            а цей текст — 
+    <div class="page-wrapper">
+        <div class="content-box">
+            
+            <header style="padding: 20px;">
+                <h1 align="center">Вітаю на сайті мого вебпроєкту!</h1>
+            </header>
+                                                                                    
+            <section>
+                <h4 title="Біографія" align="center" id="about">Коротка інформація про мене</h4>
+                
+                <p id="intro" title="Про розробника" lang="uk">
+                    Мене звати Андрій Боднар. Я студент Чернівецького національного університету.
+                </p>
+                
+                <h5 dir="ltr" align="left">Мої навички та інтереси:</h5>
+                
+                <p id="hobbies" title="Хобі" lang="uk">
+                    Я активно вивчаю вебтехнології, зокрема структурування документів за допомогою HTML та каскадних таблиць стилів CSS. 
+                    Нижче продемонстровано використання тегів та властивостей: 
+                    <br id="br1" title="Розділювач рядків">
+                    <big id="big-text" title="Великий шрифт" lang="uk">цей текст великий</big>, 
+                    <br id="br2" title="Розділювач рядків">
+                    а цей текст — 
+                    <strike id="strike-text" title="Закреслений шрифт" lang="uk">закреслений</strike>.
+                    <br id="br3" title="Розділювач рядків">
+                    Зокрема я створив сайт для комп'ютерної фірми "Chernivtsi PC", де можна ознайомитися з новинами та прайс-листом компанії.
+                    <br>
+                    <a href="site2.html" title="Перехід на сайт 2">Перейти на сайт компанії</a>. 
+                </p>
 
-            <strike id="strike-text" title="Закреслений шрифт" lang="uk">закреслений</strike>.
-            <br id="br3" title="Розділювач рядків"">
+                <!-- Блок для демонстрації псевдокласів форм :enabled та :disabled -->
+                <div style="margin-top: 15px; padding-top: 10px;">
+                    <label for="feedback">Швидкий відгук:</label>
+                    <input type="text" id="feedback" placeholder="Ваше повідомлення" enabled>
+                    <button type="button" disabled>Надіслати (деактивовано)</button>
+                </div>
 
-            Завдяки своїм навичкам я створюю вебпроєкти, які демонструють мої знання та вміння у сфері веброзробки.:
-            Зокрема я створив сайт для комп'ютерної фірми <big id="big-text" title="Назва компанії"  lang="en">"Chernivtsi PC"</big>, де можна ознайомитися з новинами та прайс-листом компанії.
-            <a href="site2.html">Перейти на сайт компанії</a>. 
-        </p>
-        
+                <hr size="2" color="#334155" width="100%">
+            </section>
 
-        <hr size="2" color="green" width="80%">
-     </section>
+            <footer style="padding: 15px; text-align: center;">
+                <small class="footer-note" lang="uk" dir="ltr">
+                    © 2026. Andrii Bodnar. Усі права захищено.
+                </small>
+            </footer>
 
-    <footer>
-
-        <small class="footer-note" lang="uk" dir="ltr">
-            © 2026. Andrii Bodnarss.
-        </small>
-    </footer>
+        </div>
+    </div>
 
 </body>
 </html>
