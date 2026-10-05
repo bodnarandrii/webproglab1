@@ -190,6 +190,8 @@ input:disabled, button:disabled {
     background-position: left;
     background-position: 10px 10px;
     background-position: 5% 5%;
+    background-size: contain; 
+    background-repeat: no-repeat;
 }
 
 .clear-box {
