@@ -56,6 +56,13 @@ h1 {
     border-width: 2px;
 }
 
+.back {
+    background-color: #0f172a;
+    background-image: url('back.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 /* =========================================================
    3. СЕЛЕКТОРИ АТРИБУТІВ: [attr], [attr=value], [attr^=value]
    ========================================================= */
